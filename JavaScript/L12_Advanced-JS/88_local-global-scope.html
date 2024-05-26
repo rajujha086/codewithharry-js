@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>local and global Scope</title>
+  </head>
+  <body>
+    <div></div>
+
+    <script>
+      // local and global Scope, Function Scope
+      /*
+       */
+
+      // Step - 1 - local - Block Level
+      /*
+       
+       */
+
+      // {
+      //   let a = 8;
+      // }
+      // console.log(a);
+
+      let p = 9;
+      function ax() {
+        let b = 8;
+        console.log(b);
+        console.log(p);
+      }
+      ax();
+      console.log(p);
+      console.log(b);
+    </script>
+  </body>
+</html>

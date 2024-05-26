@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Set-8</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .bulb {
+        background: yellow;
+      }
+
+      .bulbcontainer {
+        height: 341px;
+        width: 341px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container"></div>
+
+    <!-- Question - 01 -->
+
+    <!-- <button onclick="alert('Please give me one plate of Chowmein')">
+      Chow
+    </button>
+    <button onclick="alert('Please give me one plate of Vad pow')">Pow</button>
+    <button onclick="alert('Please give me one plate of Wow')">Wow</button> -->
+
+    <!-- Question - 02 -->
+    <!-- <h1>Bookmarks</h1>
+    <a href="https://google.com"><button>Google</button></a>
+    <a href="https://fb.com"><button>Facebook</button></a>
+    <a href="https://twitter.com"><button>Twitter</button></a> -->
+
+    <!-- Question - 03 -->
+    <!-- <button id="google">Google</button>
+    <button id="fb">Facebook</button>
+    <button id="twitter">Twitter</button> -->
+
+    <!-- Question - 04 -->
+
+    <!-- Question - 05 -->
+    <div id="bulb" class="bulbcontainer bulb"></div>
+
+    <script>
+      // Question - 01
+      /**/
+
+      // Question - 02
+      /**/
+
+      // Question - 03
+      /*
+       document.getElementById("google").addEventListener("click", function () {
+         window.location = "https://www.google.com";
+         window.location = "https://www.fb.com";
+         window.location = "https://www.twitter.com";
+         win.focus();
+       });
+       */
+
+      // Question - 04
+      /*
+       const fetchContent = async (url) => {
+         con = await fetch(url);
+         let a = await con.json();
+         return a;
+       };
+       
+       setInterval(async function () {
+         let url = "https://jsonplaceholder.typicode.com/todos/1";
+         console.log(await fetchContent(url));
+       }, 3000);
+       */
+
+      // Question - 05
+      /**/
+      setInterval(async function () {
+        document.querySelector("#bulb").classList.toggle("bulb");
+      }, 300);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Cookies in JavaScript
+      /*
+       */
+
+      console.log(document.cookie);
+      document.cookie = "name=raju1122334400";
+      document.cookie = "name2=raju1122334400";
+      document.cookie = "name=raju";
+      let key = prompt("enter yur key");
+      let value = prompt("enter yur value");
+      document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(
+        value
+      )}`;
+
+      console.log(document.cookie);
+    </script>
+  </body>
+</html>

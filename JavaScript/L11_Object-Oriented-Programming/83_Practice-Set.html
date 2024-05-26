@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Set-11</title>
+  </head>
+
+  <body>
+    <div class="container"></div>
+
+    <script>
+      // Question - 01
+      /*
+      class Complex {
+        constructor(real, imginary) {
+          this.real = real;
+          this.imginary = imginary;
+        }
+        add(num) {
+          this.real = this.real + num.real;
+          this.imginary = this.imginary + num.imginary;
+        }
+      }
+
+      let a = new Complex(2, 4);
+      let b = new Complex(6, 2);
+      a.add(b);
+      console.log(`${a.real} + ${a.imginary} i`);
+      console.log(`${b.real}  ${b.imginary}`);
+       */
+
+      // Question - 02
+      /*
+       */
+
+      class Human {
+        constructor(name, favfood) {
+          this.name = name;
+          this.favfood = favfood;
+        }
+        walk() {
+          console.log(this.name + "Human is walking");
+        }
+      }
+
+      class Student extends Human {
+        walk() {
+          console.log(this.name + ": Student is walking");
+        }
+      }
+
+      // Question - 03
+      /*
+       */
+
+      let o = new Student("Harry", "Bhindi");
+      o.walk();
+
+      // Question - 04
+      /*
+       */
+
+      console.log(o instanceof Human);
+
+      // Question - 05
+      /**/
+
+      class Complex {
+        constructor(real, imginary) {
+          this.real = real;
+          this.imginary = imginary;
+        }
+        add(num) {
+          this.real = this.real + num.real;
+          this.imginary = this.imginary + num.imginary;
+        }
+
+        get real() {
+          return this._real;
+        }
+        get imginary() {
+          return this._real;
+        }
+
+        set imginary(newImaginary) {
+          this._imaginary = newImaginary;
+        }
+        set real(newReal) {
+          this._real = newReal;
+        }
+      }
+
+      let a = new Complex(2, 4);
+      let b = new Complex(6, 2);
+      console.log(a.real, a.imaginary);
+      a.real = 10;
+      a.imginary = 10;
+
+      a.add(b);
+      console.log(`${a.real} + ${a.imginary} i`);
+      console.log(`${b.real}  ${b.imginary}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays</title>
+</head>
+
+<body>
+
+
+
+  <script>
+
+    /*
+      - Arrays - Index to access do work
+          * Object
+          * Objects
+          * Number
+          * Booleans
+          * Fruit Name
+          
+          * Arrays are mutable
+          * Arrays can be changed 
+     
+    */
+
+
+
+
+    // Arrays - Step 01
+    /*
+    let mark_class12 = [91, 82, 63, 84, 76, null, false, "Not Present"]
+    console.log(mark_class12);
+    console.log(mark_class12[0]);
+    console.log(mark_class12[1]);
+    console.log(mark_class12[2]);
+    console.log(mark_class12[3]);
+    console.log(mark_class12[4]);
+    console.log(mark_class12[5]);
+    console.log(mark_class12[6]);
+    console.log(mark_class12[7]);
+
+    console.log("The length of marks_class12 is length:", mark_class12.length);
+
+    mark_class12[8] = 98; // Adding a new value to the array
+    mark_class12[0] = 89; // Changing the value of an array
+    console.log(mark_class12[8]); // Will be undefined because index 6 does not exist
+
+
+
+    console.log(typeof mark_class12)
+    */
+
+
+    const marks = [60, 70, 80, 90, 85, 88, 95, 75, 66, 56]; // finding the average marks 
+    let sum = 0;
+
+    for (let i = 0; i < marks.length; i++) {
+      sum = sum + marks[i];
+    }
+    // for (let i = 0; < marks.length; i++) {
+    //   sum = sum + marks[i];
+    // }
+    console.log('The average of the marks is', sum / marks.length)
+
+
+
+
+
+  </script>
+</body>
+
+</html>

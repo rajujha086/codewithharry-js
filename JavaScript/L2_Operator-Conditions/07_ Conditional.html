@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditional</title>
+</head>
+
+<body>
+
+
+  <script>
+    let a = prompt("Hey whats you age?");
+    // console.log(typeof a);
+    // alert(a)
+
+    // a = Number.parseInt(a); // Converting the string to a number
+    // console.log(typeof a)
+
+
+
+    if (a < 0) {
+      alert("This is an invalid age");
+    }
+    else if (a < 9) {
+      alert("You are a kid and you cannot even think of driving");
+    }
+    else if (a < 18 && a >= 9) {
+      alert("You are a kid and you can think of driving after 18");
+    }
+    else {
+      alert("You can now drive as you are above 18 ");
+    }
+    console.log("Done")
+    console.log("You can", (a < 18 ? "not drive" : "drive"))
+
+
+
+
+
+
+    // HomeWork - Explore switch statement and write a basic programe in the element
+    // const expr = 'Mangoes'
+    // switch (expr) {
+    //   case 'Oranges':
+    //     console.log('Oranges are $0.59 a pound.');
+    //   case 'Mangoes':
+    //     console.log('Oranges are $1.59 a pound.');
+    //     break;
+    //   case 'Papayas':
+    //     console.log('Mangoes and papayas are $2.79 a pound.');
+    //     break;
+    //   default:
+    //     console.log(`Sorry, we ae out of ${expr1}.`);
+    // }
+
+  </script>
+  Ajay Chaurasia
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Handling: try and catch</title>
+  </head>
+  <body>
+    <script>
+      // try and catch  - 1
+      /*
+       */
+
+      setTimeout(() => {
+        console.log("Hacking wifi... Please Wait...");
+      }, 1000);
+
+      try {
+        setTimeout(() => {
+          console.log(rahul);
+        }, 100);
+      } catch (err) {
+        console.log("Balle Balle");
+      }
+      setTimeout(() => {
+        console.log("Fetching username and password... Please Wait...");
+      }, 2000);
+      setTimeout(() => {
+        console.log("Hacking Rahul's facebook id... Please Wait...");
+      }, 3000);
+      setTimeout(() => {
+        console.log(
+          "Username and password of Rahul (+919356700001)... Please Wait..."
+        );
+      }, 4000);
+    </script>
+  </body>
+</html>

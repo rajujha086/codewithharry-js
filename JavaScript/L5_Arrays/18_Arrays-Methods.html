@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays Methods</title>
+</head>
+
+<body>
+
+  <ol>
+    <caption>Arrays Methods</caption>
+    <li>toString()</li>
+    <li>join()</li>
+    <li>pop()</li>
+    <li>push()</li>
+    <li>shift()</li>
+    <li>unshift()</li>
+    <li>delete - Operator</li>
+    <li>concat()</li>
+    <li>sort()</li>
+    <li>splice()</li>
+    <li>slice()</li>
+    <li>reverse()</li>
+  </ol>
+
+
+  <script>
+
+
+
+
+
+
+    // delete
+    /*
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        delete num[0]; // array element can be deleted using the delete operator
+        delete num[2]; // array element can be deleted using the delete operator
+        console.log(num)
+        console.log(num.length)
+    */
+
+
+    // concat
+    /*
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        let num_more = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+        let num_even_more = [211, 212, 213, 214, 215, 216, 217, 218, 219, 220]
+    
+        let newArray = num.concat(num_more, num_even_more); // used to join arrays to the given array
+        console.log(newArray)
+        console.log(num, num_more)
+    */
+
+
+    // sort
+    /*
+        let compare = (a, b) => {
+          // return a - b // starting alphaletically
+          return b - a // ending alphaletically
+        }
+
+        let num = [551, 22, 3, 14, 5, 7, 6, 8, 229, 10, 28, 73, 22]
+        num.sort(compare); // sort() method is used to sort an array alphaletically
+        console.log(num)
+    */
+
+
+    // reverse
+    /*
+        let compare = (a, b) => {
+          // return a - b // starting alphaletically
+          return b - a // ending alphaletically
+        }
+
+        let num = [551, 22, 3, 14, 5, 7, 6, 8, 229, 10, 28, 73, 22]
+        num.sort(compare); // sort() method is used to sort an array alphaletically
+        num.reverse()
+        console.log(num)
+    */
+
+
+
+    // splice
+    /*  
+        //  step 01
+        let num = [551, 22, 3, 14, 5, 7, 6, 8, 229, 10, 28, 73, 22]
+        num.splice(2, 4, 1021, 1022, 1023, 1024, 1025)
+        console.log(num)
+
+        //  step 02
+        let deletedValue = num.splice(2, 4, 1021, 1022, 1023, 1024, 1025)
+        console.log(deletedValue)
+        console.log(typeof deletedValue)
+    
+    */
+
+
+    // slice
+    /*  
+    
+    */
+    //  step 01
+    let num = [551, 22, 3, 14, 5, 7, 6, 8, 229, 10, 28, 73, 22]
+    num.slice(3)
+    console.log(num)
+
+    //  step 02
+    let num1 = [551, 22, 3, 14, 5, 7, 6, 8, 229, 10, 28, 73, 22]
+    // let newNum = num.slice(3) // Start 
+    let newNum = num.slice(3, 5) // last index is not included 
+    console.log(newNum)
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructors in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Constructors in JavaScript
+      /*
+
+       */
+
+      class Employee {
+        login() {
+          console.log(`Employee has logged in`);
+        }
+        logout() {
+          console.log(`Employee has logged out`);
+        }
+        requestLeaves1(leaves) {
+          console.log(
+            `Employee has requested ${leaves} leaves - Auto approved`
+          );
+        }
+      }
+
+      class Programmer extends Employee {
+        requestCoffee(x) {
+          console.log(`Employee has requested ${x} coffees`);
+        }
+        requestLeaves(leaves) {
+          console.log(
+            super.requestLeaves1(4),
+            console.log("One extra is granted")
+            // `Employee has requested ${leaves + 1} leaves (One extra)`
+          );
+        }
+      }
+
+      // let e = new Employee();
+      let e = new Programmer();
+      e.login();
+      e.requestLeaves1(2);
+      e.requestLeaves(2);
+      e.requestCoffee(x);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Set-7</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        background-color: rgb(226, 226, 226);
+      }
+      nav li {
+        list-style-type: none;
+        padding: 0 23px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Question - 01 -->
+    <nav>
+      <li>Home</li>
+      <li>About</li>
+      <li>Blog</li>
+      <li>Contact</li>
+    </nav>
+
+    <!-- Question - 02 -->
+    <table>
+      <td>Hello</td>
+      <tr>
+        Hello 1
+      </tr>
+      <tr>
+        Hello 2
+      </tr>
+      <tr>
+        Hello 3
+      </tr>
+      <tr>
+        Hello 4
+      </tr>
+      <tr>
+        Hello 5
+      </tr>
+    </table>
+    <script>
+      // Question - 01
+      /**/
+      document.getElementsByTagName("nav")[0].firstElementChild.style.color =
+        "red";
+
+      // Question - 03
+      /**/
+      document.getElementsByTagName("nav")[0].firstElementChild.style.color =
+        "green";
+      document.getElementsByTagName("nav")[0].lastElementChild.style.color =
+        "blue";
+
+      // Question - 04
+      /**/
+      Array.from(document.getElementsByTagName("li")).forEach((element) => {
+        element.style.background = "cyan";
+      });
+    </script>
+  </body>
+</html>

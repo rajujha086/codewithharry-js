@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert, Prompt & Confirm</title>
+</head>
+
+<body>
+
+
+  <ol>
+    <caption></caption>
+    <li>Alert - used to invoke a mini window with a msg.</li>
+    <li>Confirm - shows a message and waits for the user to press ok or cancel. Teturns true for ok and false for cancel
+    </li>
+    <li>Prompt - used to take user input as string </li>
+  </ol>
+
+  <script>
+
+    // Alert
+    // alert("Hello your script works!")
+
+    // Prompt
+    // let a = prompt("Enter a here!", "4545")
+    // alert("You entered a of type " + (typeof a))
+    // document.write(a)
+
+    // Confirm
+    let a = prompt("Enter a here!", "4545")
+    document.write(a)
+    let write = confirm("Do you want to write it to the page")
+    if (write) {
+      document.write(a)
+    } else {
+      document.write("Please allow me to write")
+    }
+
+  </script>
+</body>
+
+</html>

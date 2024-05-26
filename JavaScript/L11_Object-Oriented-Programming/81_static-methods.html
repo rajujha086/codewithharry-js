@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Method in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Static Method in JavaScript
+      /*
+
+       */
+
+      class Animal {
+        constructor(name) {
+          this.name = name;
+          // this.name = Animal.capitalize(name);
+        }
+        walk() {
+          console.log("Animal " + this.name + " is walking");
+          // console.log("Animal " + Animal.capitalize(this.name) + " is walking");
+        }
+        static capitalize(name) {
+          return name.charAt(0).toUpperCase() + name.substr(1, name.length);
+        }
+      }
+      j = new Animal("jack");
+      // j = new Animal(Animal.capitalize("jack"));
+      j.walk();
+      // console.log(j.capitalize("this a")); // This doesn't work
+    </script>
+  </body>
+</html>

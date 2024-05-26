@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getters, setters & instanceOf Operator</title>
+  </head>
+  <body>
+    <script>
+      // getters, setters & instanceOf Operator
+      /*
+
+       */
+
+      class Animal {
+        constructor(name) {
+          this._name = name;
+        }
+        fly() {
+          // alert("Mai ud rha hu");
+          console.log("Mai ud rha hu");
+        }
+        get name() {
+          return this._name;
+        }
+        set name(newName) {
+          this._name = newName;
+        }
+      }
+
+      class Rabbit extends Animal {
+        eatCarrot() {
+          console.log("Eating carrot");
+        }
+      }
+
+      let a = new Animal("Bruno");
+      let a1 = new Rabbit("Bruno");
+      a.fly();
+      console.log(a.name);
+      console.log(a1.name);
+      a.name = "Jack";
+      console.log(a.name);
+      let c = 56;
+
+      console.log(a instanceof Animal);
+      console.log(a1 instanceof Rabbit);
+      console.log(c instanceof Animal);
+    </script>
+  </body>
+</html>

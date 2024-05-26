@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protypes and __proto__ in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Protypes and __proto__ in JavaScript
+      /*
+       */
+
+      let a = {
+        name1: "Harry",
+        language: "JavaScript",
+        run: () => {
+          alert("self run");
+        },
+      };
+      console.log(a);
+
+      let p = {
+        run: () => {
+          alert("run");
+        },
+      };
+
+      p.__proto__ = {
+        name: "Jackie",
+      };
+
+      a.__proto__ = p;
+      a.run();
+      console.log(a.name);
+      console.log(a.language);
+    </script>
+  </body>
+</html>

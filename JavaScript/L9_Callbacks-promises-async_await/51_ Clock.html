@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock using JavaScript</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .bulb {
+        background: yellow;
+      }
+
+      .bulbcontainer {
+        height: 341px;
+        width: 341px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container"></div>
+
+    <script>
+      let a = new Date();
+      let h = a.getHours();
+      let m = a.getMinutes();
+      let s = a.getSeconds();
+      let d = a.getDate();
+      let e = a.getUTCSeconds();
+
+      console.log(h, m, s, d, e);
+    </script>
+  </body>
+</html>

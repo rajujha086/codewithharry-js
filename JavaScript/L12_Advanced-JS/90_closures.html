@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closures in JavaScript</title>
+  </head>
+  <body>
+    <div></div>
+
+    <script>
+      // Closures
+      /*
+       */
+
+      // Step - 1
+      /*
+        message = "Good Global";
+      function hello1() {
+        message = "Good Morning";
+        console.log("Hello 1: " + message);
+      }
+      hello1();
+       */
+
+      // Step - 2
+      /*
+      message = "Good Global";
+      function hello1() {
+        let message = "Good Morning";
+        {
+          let message = "Good Afternoon";
+          console.log("Hello 1: " + message);
+        }
+        console.log(message);
+      }
+
+      hello1();
+       */
+
+      // Step - 3
+      /*
+      message = "Good Global";
+      function hello1() {
+        let message = "Good Morning";
+        {
+          let message = "Good Afternoon";
+          console.log("Hello 1: " + message);
+        }
+        let c = function hello2() {
+          console.log("I am c " + message);
+        };
+        return c;
+      }
+
+      c = hello1();
+      c();
+       */
+
+      // Step - 4
+      /*
+      message = "Good Global";
+      function hello1() {
+        let message = "Good Morning";
+
+        // let message = "Good Afternoon";
+        console.log("Hello 1: " + message);
+
+        let c = function hello2() {
+          console.log("I am c " + message);
+        };
+        return c;
+      }
+
+      c = hello1();
+      c();
+       */
+
+      // Step - 5
+      /*
+       */
+
+      function returnFunc() {
+        const x = () => {
+          let a = 1;
+          console.log(a);
+          const y = () => {
+            // let a = 2;
+            console.log(a);
+            const z = () => {
+              // let a = 3;
+              console.log(a);
+            };
+            z();
+          };
+          a = 999;
+          y();
+        };
+        return x;
+      }
+      let a = returnFunc();
+      a();
+    </script>
+  </body>
+</html>

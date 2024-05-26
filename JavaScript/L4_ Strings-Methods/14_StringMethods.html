@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strings</title>
+</head>
+
+<body>
+
+
+
+  <script>
+
+    /*
+      - Strings Methods Properties
+          * Length
+          * Single Quote Syntax
+          * Template Literals
+     
+    */
+
+
+
+
+    // Strings - Length
+    /*
+    */
+
+    let name1 = "Harry"
+    console.log(name1.length)
+
+    let name2 = "Harry\""
+    console.log(name2.length)
+
+
+
+    // Strings - Upper/Lower Text / Slice
+    /*
+    */
+    let name = "Code with Harry"
+    console.log(name.toUpperCase()); // Upper Case Text
+    console.log(name.toLowerCase()); // Lower Case Text
+
+    //Slice
+    console.log(name.slice(2, 6)); // array.slice(startIndex, endIndex)
+    console.log(name.slice(2)); // array.slice(startIndex) - Starting to endIndex tak text aaye
+
+
+    // Strings - Replace Text
+    let name3 = "Code with Harry"
+    console.log(name.replace("Har", "Per")); // string.replace(searchValue, newValue)
+
+    // Strings - concat Text (merge two or more arrays or values into a new array )
+    let friend = "Naman"
+    console.log(name3.concat(" is a friend of ", friend, " ok ")) // - array.concat(value1, value2, ..., valueN)
+
+
+
+    // Strings - Trim Text (method is used to remove whitespace characters from both ends of a string)
+    let friend2 = "            Meena         "
+    console.log(friend2)
+    console.log(friend2.trim()) // string.trim()
+
+
+
+    let fr = "Raman" + "Shivika" + "Harry"
+    console.log(fr[0])
+    console.log(fr[1])
+    console.log(fr[2])
+    console.log(fr[3])
+    console.log(fr[4])
+
+
+    // QuickQuiz: Use a for loop to print a string
+    // fr[4] = "o" // This is not possible 
+    console.log(fr)
+
+
+  </script>
+</body>
+
+</html>

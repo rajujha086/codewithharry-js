@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Attributes</title>
+  </head>
+  <body>
+    <div id="first" class="hey" data-game="merio" data-player="harry">
+      Hey I am first container
+    </div>
+
+    <script>
+      // let a = first.getAttribute("id");
+      // let a1 = first.getAttribute("class");
+      // console.log(a);
+      // console.log(a1);
+
+      // Attribute Method
+      // console.log(first.hasAttribute("class"));
+      // console.log(first.hasAttribute("style"));
+
+      // setAttribute Method
+      // first.setAttribute("hidden", "true");
+      // first.setAttribute("class", "true sach");
+
+      // removeAttribute Method
+      // first.removeAttribute("class", "true sach");
+
+      // All Attribute Method
+      // console.log(first.attributes);
+
+      // Data-* Attribute
+      console.log(first.dataset);
+      console.log(first.dataset.game);
+      console.log(first.dataset.player);
+    </script>
+  </body>
+</html>

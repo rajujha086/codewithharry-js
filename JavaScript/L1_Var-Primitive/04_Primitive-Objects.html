@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primitive Data Types</title>
+</head>
+
+<body>
+
+
+  <script>
+    /* Primitives Data Types in JS
+      N - Null
+      N - Number
+      B - Boolean
+      B - Bigint
+      S - Symbol
+      S - String
+      U - Undefined
+    */
+
+    let a = null;
+    let b = 345;
+    let c = true; // can also be false/true - Boolean
+    let d = BigInt("567") + BigInt("3"); // Bigint
+    let e = Symbol("I am a nice symbol");
+    let f = "Harry";
+    let g = undefined;
+    let g1
+
+    console.log(a, b, c, d, e, f, g)
+    console.log(typeof f)
+
+
+
+
+    /*  Non Primitive Data Types - Objects in JS
+        - Object inside JavaScirpt
+    */
+    // Objects in JS
+    const item = {
+      "Harry": true,
+      "Shubh": false,
+      "Lovish": 67,
+      "Rohan": undefined
+    }
+    console.log(item)
+    console.log(item["Harry"])
+    console.log(item["Lovish"])
+
+
+  </script>
+
+</body>
+
+</html>

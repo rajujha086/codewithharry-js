@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring assignment and Spread Operator</title>
+  </head>
+  <body>
+    <div></div>
+
+    <script>
+      // https://replit.com/@codewithharry/87destructuring#script.js
+      // Destructuring assignment and Spread Operator
+      /*
+       */
+
+      // Step - 1 - Destructuring
+      /*
+          let arr = [3, 5];
+          // let [a, b] = arr;
+          let a = arr[0]; // No need to do this:
+          let b = arr[1]; // No need to do this:
+       */
+
+      // Step - 2 - Destructuring
+      /*
+      let arr = [3, 5];
+      let [a, b] = arr;
+      console.log(a, b);
+       */
+
+      // Step - 3 - Destructuring
+      /*
+      let arr = [3, 5, 8, 9, 12, 14];
+      let [a, b, c, d] = arr;
+      console.log(a, b, c, d);
+       */
+
+      // Step - 4 - Destructuring
+      /*
+            let arr = [3, 5, 8, 9, 12, 14];
+            let [a, b, c, d, ...rest] = arr;
+            console.log(a, b, c, d, rest);
+       */
+
+      // Step - 5 - Destructuring
+      /*
+          let arr = [3, 5, 8, 9, 12, 14];
+          let [a, , , ...rest] = arr;
+          console.log(a, rest);
+       */
+
+      // Step - 6 - Destructuring
+      /*
+          let arr = [3, 5, 8, 9, 12, 14];
+          let [a, , , c, ...rest] = arr;
+          console.log(a, c, rest);
+       */
+
+      // Step - 7 - Destructuring
+      /*
+          let arr = [3, 5, 8, 9, 12, 14];
+          let { a, b } = { a: 2, b: 4 };
+          console.log(a, b);
+       */
+
+      // Spread Operator - 1
+      /*
+          let arr = [3, 5, 8, 9, 12, 14];
+          let obj = { ...arr };
+          console.log(obj);
+       */
+
+      // Spread Operator - 2
+      /*
+          let arr = [3, 5, 8, 9, 12, 14];
+          let obj = { ...arr };
+          console.log(obj);
+
+          function sum(v1, v2, v3, v4) {
+            return v1 + v2 + v3 + v4;
+          }
+          console.log(sum(...arr));
+       */
+
+      // Spread Operator - 2 ( React Function)
+      /*
+       */
+
+      let obj = {
+        name: "Harry",
+        company: "xyz",
+        address: "XYZ",
+      };
+      // console.log({ ...obj });
+      console.log({ ...obj, name: "Raju" });
+      console.log({ ...obj, name: "Raju", company: "ABC" });
+      console.log({ name: "Raju", company: "ABC", ...obj }); // No value change  -  This will print the obj object without changing any values
+
+      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+    </script>
+  </body>
+</html>
